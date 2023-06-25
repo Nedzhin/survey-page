@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Developer survey form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Developer notebook survey form</h1>
+    <p id="description">Thank you for the filling this form and helping us improve the platform</p>
+
+    <form id="survey-form">
+      <label for="name" id="name-label">Name<input id="name" type="text" placeholder="Enter your name" required /></label>
+      <label for="email" id="email-label">Email<input id="email" type="email" placeholder="Enter your email" required/></label>
+      <label for="number" id="number-label">Number<input id="number" type="number" min="8" max="50" placeholder="Number" required /></label>
+      
+
+      <label for="definitely"><input id="definitely" class="inline" type="radio" name="recommend" value="definitely"/>Definitely</label>
+      <label for="not-sure"><input id="not-sure" class="inline" type="radio" name="recommend" value="not-sure"/>Not sure</label>
+
+      <label for="dropdown">Which option best describes you?
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+        </select>
+      </label>
+
+      <label for="front-end"><input id="front-end" class="inline" type="checkbox" value="front-end" />Front-end development</label>
+      <label for="back-end"><input id="back-end" class="inline" type="checkbox" value="back-end" />Back-end development</label>
+
+      <label for="bio">Any comments or suggestions?
+        <textarea id="bio" placeholder="Enter your comment here...">
+        </textarea>
+      </label>
+
+      <label for="submit">
+        <input id="submit" type="submit" value="Submit" />
+      </label>
+    
+    </form>
+  </body>
+</html>
